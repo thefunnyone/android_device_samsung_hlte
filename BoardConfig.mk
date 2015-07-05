@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common hlte
--include device/samsung/hlte-common/BoardConfigCommon.mk
+# inherit from common ks01lte
+-include device/samsung/ks01lte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hlte,hlteskt,hltektt,SM-N900S,SM-N900K
+TARGET_OTA_ASSERT_DEVICE := ks01ltexx,GT-I9506,ks01lte,ks01lteskt,ks01ltektt
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlte/init/init_hlte.c
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/ks01lte/init/init_ks01lte.c
 TARGET_UNIFIED_DEVICE := true
 
 # Partitions
