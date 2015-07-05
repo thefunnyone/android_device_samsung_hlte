@@ -17,10 +17,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/hlte/hlte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/ks01lte/ks01lte-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Common hlte
-$(call inherit-product, device/samsung/hlte-common/hlte.mk)
+$(call inherit-product, device/samsung/ks01lte-common/ks01lte.mk)
